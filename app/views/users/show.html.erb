@@ -1,3 +1,4 @@
-<% @user.items.each do |item| %>
+<%# itemsは、アソシエーションでconcerns/user.rbにhas_many :itemsに対応しているので、@userに対してitemsというメソッドが用意される %>
+<%# userに紐付いたitems(商品)だけが検索できるようになる %>
   <p><%= item.name %>:<%= item.price %></p>
 <% end %>

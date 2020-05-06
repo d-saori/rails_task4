@@ -16,8 +16,9 @@
   <% if user_signed_in? %>
     <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
     <%= link_to "トップ", items_path %>
-    <%= link_to '投稿画面', new_item_path %>
-    <%= link_to 'マイページへ', user_path(current_user.id) %>
+    <%= link_to "投稿画面", new_item_path %>
+    <%# 特定のユーザーの詳細ページに移動するのでuser_pathでidを指定する際current＿user.idを指定する %>
+    <%= link_to "マイページへ", user_path(current_user.id) %>
   <%# ログアウト時の状態 %>
   <% else %>
     <%= link_to "ログイン", new_user_session_path, class: 'post' %>

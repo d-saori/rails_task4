@@ -1,6 +1,10 @@
+<%# form_for:特定のモデルを編集するのに特化 %>
+<%# form_for 格納したい変数, method: HTTPメソッド名 do |f| %>
 <%= form_for @item, method: :post do |f| %>
   <h1>ご購入商品の情報を入力</h1>
+  <%# 購入したい商品のデータを入力したら、そのユーザーに紐付いてdbにデータが登録される %>
   <p>商品名:<%= f.text_field :name %></p>
   <p>値段:<%= f.text_field :price %></p>
+  <%# 『input type="submit"』=ボタン、『value=""』=""内の文字がボタン上に表示される %>
   <input type="submit" value="SENT">
 <% end %>
