@@ -1,24 +1,5 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+「Devise を使ったログイン機能」のアプリを作成<br>
+<br>
+- 【動画教材】Deviseを使ったログイン機能の実装
+- 【テキスト教材】ログイン機能
